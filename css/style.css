@@ -1365,7 +1365,7 @@
 @media only screen and (min-width: 0em) {
   :root {
     --primary: #008E87;
-    --primaryLight: #8EFFF9;
+    --primaryLight: #077a75;
     --secondary: #001F3F;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4E4B66;
@@ -1619,4 +1619,8 @@
     /* lighten up the color of the text by 90%*/
     filter: brightness(1.9);
   }
+}
+
+#captcha {
+  margin-bottom: 20px;
 }
