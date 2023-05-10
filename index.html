@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
+
+	<title>Title in the tab</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+
+
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+	<div class="cs-container">
+		<!--Nav Logo-->
+		<a href="" class="cs-logo" aria-label="back to home">
+			<img src="img/logo.png" alt="logo" width="210" aria-hidden="true" decoding="async">
+		</a>
+		<!--Navigation List-->
+		<nav class="cs-nav" role="navigation">
+			<!--Mobile Nav Toggle-->
+			<button class="cs-toggle" aria-label="mobile menu toggle">
+				<div class="cs-box" aria-hidden="true">
+					<span class="cs-line cs-line1" aria-hidden="true"></span>
+					<span class="cs-line cs-line2" aria-hidden="true"></span>
+					<span class="cs-line cs-line3" aria-hidden="true"></span>
+				</div>
+			</button>
+			<!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+			<div class="cs-ul-wrapper">
+				<ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+					<li class="cs-li">
+						<a href="#hero" class="cs-li-link cs-active">
+							Home
+						</a>
+					</li>
+					<li class="cs-li">
+						<a href="#why-choose" class="cs-li-link">
+							About Me
+						</a>
+					</li>
+					<li class="cs-li">
+						<a href="#projects" class="cs-li-link">
+							My Work
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+		<a href="#cs-contact" class="cs-button-solid cs-nav-button">Contact Me</a>
+		<!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+		<!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+	</div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero">
+	<div class="cs-container">
+		<div class="cs-flex-group">
+			<span class="cs-topper">Welcome! 👋</span>
+			<h1 class="cs-title">Hi, I'm Alex, your next Software Engineer!</h1>
+			<p class="cs-text">
+				Thank you for visiting my personal website. Take a look at my recent work, and let me know if you want to have a chat!
+			</p>
+			<div class="cs-button-group">
+				<a href="" class="cs-button-solid">Contact Me</a>
+			</div>
+		</div>
+		<div class="cs-image-group">
+
+			<!-- To make your own crops of people, use this tool to remove the backgorund of images https://www.remove.bg/ -->
+			<picture class="cs-person">
+				<source media="(max-width: 600px)" srcset="img/alex_profile_picture.jpg">
+				<source media="(min-width: 601px)" srcset="img/alex_profile_picture.jpg">
+				<img aria-hidden="true" loading="lazy" decoding="async" src="img/alex_profile_picture.jpg" alt="alexmckme" width="831" height="674">
+			</picture>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- ============================================ -->
+<!--                 About ME                   -->
+<!-- ============================================ -->
+
+<section id="why-choose">
+	<div class="cs-container">
+		<div class="cs-content-group">
+			<span class="cs-topper">About Me</span>
+			<h2 class="cs-title">Passion & Dedication</h2>
+		</div>
+		<p class="cs-text">
+			As a Full-Stack Software Engineer, I have always been passionate about Technology and its impact on different industries. I am constantly eager to put my skills to use and bring the most value to my clients and my peers.
+			<br>...<br>
+			Learning is essential to me, so when I'm not sharpening my coding skills, you can find me playing the guitar, or learning a foreign language!
+		</p>
+		<ul class="cs-card-group">
+			<li class="cs-item">
+				<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="img/web-development-svgrepo-com.svg" alt="icon" width="48" height="48">
+				<h3 class="cs-h3">Web Development</h3>
+				<p class="cs-item-text">
+					I am able to create websites and Full-Stack solutions to suit all your needs, with the end user experience and reliability in mind.
+				</p>
+			</li>
+			<li class="cs-item">
+				<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="img/knowledge-education-creativity-inspiration-intelligence-svgrepo-com.svg" alt="icon" width="40" height="48">
+				<h3 class="cs-h3">Problem Solving</h3>
+				<p class="cs-item-text">
+					Throughout my education and career, critical thinking has always been an important component in my work, to tackle problems, and come up with elegant solutions.
+				</p>
+			</li>
+			<li class="cs-item">
+				<img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="img/communication-4-svgrepo-com.svg" alt="icon" width="48" height="48">
+				<h3 class="cs-h3">Communication</h3>
+				<p class="cs-item-text">
+					As a good communicator, I pay special attention to listening attentively, understanding business stakes, and conveying ideas effectively.
+				</p>
+			</li>
+		</ul>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+<!-- ============================================ -->
+<!--                  Projects                    -->
+<!-- ============================================ -->
+
+<section id="projects">
+	<div class="cs-container">
+		<div class="cs-content">
+			<div class="cs-flex-group">
+				<span class="cs-topper">My Work</span>
+				<h2 class="cs-title">Showcasing some of my projects</h2>
+			</div>
+			<p class="cs-text">
+				In this section, you will find a portfolio of some websites I coded from beginning to end. I focus heavily on choosing designs that make sense, as well as delivering a smooth user experience.<br>...<br>
+				Feel free to take a look and explore them!
+			</p>
+		</div>
+		<ul class="cs-card-group">
+			<li class="cs-item">
+				<a class="cs-link" target="_blank" href="https://euphonious-panda-ad8deb.netlify.app/">
+					<div class="cs-info">
+						<picture class="cs-background">
+							<!--Mobile Image-->
+							<source media="(max-width: 600px)" srcset="img/fylo-sc.png">
+							<!--Tablet and above Image-->
+							<source media="(min-width: 601px)" srcset="img/fylo-sc.png">
+							<img loading="lazy" decoding="async" src="img/fylo-sc.png" alt="fylo-landingpage" width="413" height="450">
+						</picture>
+						<span class="cs-header">File Storage App Webpage</span>
+						<p class="cs-item-p">
+							A fully responsive, beautiful, modern website for a file storage application in beta access.
+						</p>
+						<span class="cs-number">01</span>
+					</div>
+					<h3 class="cs-h3">File Storage App Webpage</h3>
+				</a>
+			</li>
+			<li class="cs-item">
+				<a class="cs-link" target="_blank" href="https://ephemeral-valkyrie-140185.netlify.app/">
+					<div class="cs-info">
+						<picture class="cs-background">
+							<!--Mobile Image-->
+							<source media="(max-width: 600px)" srcset="img/clipboard-sc.png">
+							<!--Tablet and above Image-->
+							<source media="(min-width: 601px)" srcset="img/clipboard-sc.png">
+							<img loading="lazy" decoding="async" src="img/clipboard-sc.png" alt="clipboard-landingpage" width="413" height="450">
+						</picture>
+						<span class="cs-header">Copy Storage App Webpage</span>
+						<p class="cs-item-p">
+							Another fully responsive landing page for an cloud clipboard saver application for Mac and iOS.
+						</p>
+						<span class="cs-number">02</span>
+					</div>
+					<h3 class="cs-h3">Copy Storage App Webpage</h3>
+				</a>
+			</li>
+<!--			<li class="cs-item">-->
+<!--				<a class="cs-link" href="">-->
+<!--					<div class="cs-info">-->
+<!--						<picture class="cs-background">-->
+<!--							&lt;!&ndash;Mobile Image&ndash;&gt;-->
+<!--							<source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/bathroom1.jpg">-->
+<!--							&lt;!&ndash;Tablet and above Image&ndash;&gt;-->
+<!--							<source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/bathroom1.jpg">-->
+<!--							<img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/bathroom1.jpg" alt="bathroom" width="413" height="450">-->
+<!--						</picture>-->
+<!--						<span class="cs-header">Project 1</span>-->
+<!--						<p class="cs-item-p">-->
+<!--							Lorem ipsum dolor sit ameet. Don nisi ligula eget dolor quam et. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes.-->
+<!--						</p>-->
+<!--						<span class="cs-number">03</span>-->
+<!--					</div>-->
+<!--					<h3 class="cs-h3">Granville Project</h3>-->
+<!--				</a>-->
+<!--			</li>-->
+<!--			<li class="cs-item">-->
+<!--				<a class="cs-link" href="">-->
+<!--					<div class="cs-info">-->
+<!--						<picture class="cs-background">-->
+<!--							&lt;!&ndash;Mobile Image&ndash;&gt;-->
+<!--							<source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/bathroom1.jpg">-->
+<!--							&lt;!&ndash;Tablet and above Image&ndash;&gt;-->
+<!--							<source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/bathroom1.jpg">-->
+<!--							<img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/bathroom1.jpg" alt="bathroom" width="413" height="450">-->
+<!--						</picture>-->
+<!--						<span class="cs-header">Project 1</span>-->
+<!--						<p class="cs-item-p">-->
+<!--							Lorem ipsum dolor sit ameet. Don nisi ligula eget dolor quam et. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes.-->
+<!--						</p>-->
+<!--						<span class="cs-number">04</span>-->
+<!--					</div>-->
+<!--					<h3 class="cs-h3">Granville Project</h3>-->
+<!--				</a>-->
+			</li>
+		</ul>
+	</div>
+</section>
+
+
+
+
+
+
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+
+<section id="cs-contact">
+	<div class="cs-container">
+		<!-- Contact Info -->
+		<div class="cs-content">
+			<span class="cs-topper">Contact Me</span>
+			<h2 class="cs-title">Let's get in touch!</h2>
+			<p class="cs-text">
+				Whether you need someone to create and maintain your website, or the latest addition to your team, I am currently open to listen to new project opportunities. Just drop a quick message!
+			</p>
+
+			<!--Email-->
+			<span class="cs-header">Email</span>
+			<a href="" class="cs-link" id="enc-email">Mailto my Address</a>
+			<!--GH-->
+			<span class="cs-header">GitHub</span>
+			<a href="https://github.com/alexmckme" target="_blank" class="cs-link">
+				github.com/alexmckme
+			</a>
+			<!--LinkedIn-->
+			<span class="cs-header">LinkedIn</span>
+			<a href="https://www.linkedin.com/in/alexmackame/" target="_blank" class="cs-link" id="enc-email">linkedin.com/in/alexmackame/</a>
+			<!--TW-->
+			<span class="cs-header">Twitter</span>
+			<a href="https://twitter.com/AlexMckme" target="_blank" class="cs-link">twitter.com/AlexMckme</a>
+
+
+		</div>
+		<!-- Form -->
+		<form id="cs-form" name="Contact Form" method="post" action="POST" data-netlify="true">
+			<label>
+				Name
+				<input required type="text" id="name" name="name" placeholder="John Code">
+			</label>
+			<label>
+				Email
+				<input required type="text" id="email" name="email" placeholder="john@yourcompany.com">
+			</label>
+			<label class="cs-label-message">
+				Message
+				<textarea required name="Message" id="message" placeholder="Enter your message here..."></textarea>
+			</label>
+			<div data-netlify-recaptcha="true"></div>
+			<button class="cs-button-solid" type="submit">Submit Message Now</button>
+		</form>
+	</div>
+</section>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
