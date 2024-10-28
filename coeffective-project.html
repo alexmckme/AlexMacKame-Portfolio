@@ -1,10 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3V57817QS7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3V57817QS7');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Alex Mac-Kame's Portfolio!">
+    <meta name="keywords" content="Alex Mac-Kame, Portfolio, Software Engineer, Web Developer, Full Stack">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Alex Mac-Kame - Coeffective Project</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/coeffective-project-style.css">
+
 </head>
 <body>
+
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="img/logo.png" alt="logo" width="210" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="index.html" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<section id="why-choose">
+    <div class="cs-container">
+
+        <h1 class="cs-title">Coeffective</h1>
+
+        <div>
+            <p class="cs-text">Coeffective simplifies the automation of updating Google Sheets files that rely on extracts from AVIV CRMs (Salesforce) and AVIV databases (Amazon S3). I developed this solution as a full-stack web application with an intuitive interface for the Business Analysts team I was part of at AVIV Group.</p>
+
+            <div class="cs-table-overview cs-text">
+                <div class="cs-table-column">
+                    <span><strong>Type</strong></span>
+                    <span>Side Project</span>
+                </div>
+                <div class="cs-table-column">
+                    <span><strong>Tech Stack</strong></span>
+                    <span>Next.js</span>
+                    <span>Node.js</span>
+                    <span>Supabase</span>
+                    <span>Python</span>
+                    <span>Google APIs</span>
+                    <span>Tableau API</span>
+                    <span>DigitalOcean / Hetzner servers</span>
+                </div>
+                <div class="cs-table-column">
+                    <span><strong>Live</strong></span>
+                    <span><a href="https://aviv-sp-tools.vercel.app/">View Site</a></span>
+                    <span><a href="https://github.com/alexmckme/aviv-sp-tools">Website Github Repo</a></span>
+                    <span><a href="https://github.com/alexmckme/coeffective-script">Server-side script Github Repo</a></span>
+                </div>
+            </div>
+
+            <img class="coeffective-home-img" src="img/coeffective/coeffective-project-home.png" alt="coeffective landing page">
+
+            <p class="cs-text">I built this project entirely from scratch, beginning with the <em><strong>npx create-next-app@latest</strong></em> command. As it was a personal project, I handled everything from establishing the core logic and design to developing both the front-end and back-end components.</p>
+        </div>
+
+        <div>
+            <h2>Core functionalities and features</h2>
+            <div class="functionalities-wrapper">
+                <div class="feature pair">
+                    <p><strong>User Authentication</strong>: Each user has their own personal space within the app</p>
+                    <img src="img/coeffective/coeffective-project-feature1-user-auth.PNG" alt="user authentication screen">
+                </div>
+                <div class="feature impair">
+                    <p><strong>Google Drive Integration</strong>: Upon accessing Coeffective for the first time, a dedicated Google Drive folder is created and shared with the user.</p>
+                    <img src="img/coeffective/coeffective-project-feature2-drive-share.PNG" alt="google drive folder share email">
+                </div>
+                <div class="feature pair">
+                    <p><strong>Extract Scheduling</strong>: Users can schedule data imports from one of two Salesforce instances (“MA” or “GSL”) or from Amazon S3 (“Flamingo”). They can choose to create new Google Sheet files or update existing ones with incoming data.</p>
+                    <img src="img/coeffective/coeffective-project-feature3-new-extract-scheduling.PNG" alt="new extract form">
+                </div>
+                <div class="feature impair">
+                    <p><strong>Automated Updates</strong>: Scheduled extracts are automatically refreshed in Google Sheets based on the user’s chosen frequency and time window.</p>
+                    <img src="img/coeffective/coeffective-project-feature4-automated-updates.PNG" alt="automated google sheet update">
+                </div>
+                <div class="feature pair">
+                    <p><strong>Dashboard Overview</strong>: Users have a centralized view of Google Sheets and scheduled imports created through the app, with options to view details or delete them as needed.</p>
+                    <img src="img/coeffective.png" alt="coeffective dashboard">
+                </div>
+                <div class="feature impair">
+                    <p><strong>Setup Tutorial</strong>: A detailed tutorial is provided to guide users through setting up their machine, a prerequisite for creating “Flamingo” extract imports.</p>
+                    <img src="img/coeffective/coeffective-project-feature6-documentation.PNG" alt="tableau documentation">
+                </div>
+            </div>
+        </div>
+
+        <div class="purpose-goal">
+            <h2>Purpose and Goal</h2>
+            <p>At AVIV Group, the majority of commercial reporting relies on Google Sheets. In my analytics role, I was responsible for creating and maintaining many of these files, using data from two different Salesforce instances. To meet the needs of my internal clients, frequent refreshes were essential, often every hour or more.</p>
+            <p>After experimenting with Google service accounts and Salesforce access tokens, I developed a personal Python script, scheduled to run every 30 minutes via GitHub Actions. This solution worked well for me for quite a while. Meanwhile, my analyst teammates, facing similar challenges, had to use a paid tool with limitations, which most notably restricted each user to use only a single Salesforce instance at a time.</p>
+            <p>At one point, we also needed an automated solution to import data from our company database, which was different from Salesforce. Having worked with Tableau API in the past, I had already explored some ways this could be done programmatically in our context. This time, however, no obvious existing paid solution could help the rest of my team achieve this goal.</p>
+            <p>This is what inspired me to expand my initial script into a full project. My desire was to empower my team by allowing them to configure automatic data imports independently, allowing flexible access to any of our three data sources. I envisioned an intuitive interface that would be tailor-made to our specific needs, with a polished professional design and reliable performance.</p>
+        </div>
+
+        <img class="animated-demo" src="img/coeffective/coeffective-project-confirmation-import.webp" alt="creating a new import">
+
+        <div class="tech-stack-container">
+            <div>
+                <h2>Tech Stack and Explanation</h2>
+                <p>I love React, so I wanted to use a React framework for this project. I chose Next.js mainly for its performance benefits with Server-Side Rendering. Also, using a React framework with modern features like Suspense would allow me to have the tools I need to create high-quality user experiences, no matter the complexity of the application if I were to develop more features. The main website is hosted on Vercel.</p>
+                <p>For the database, I opted for Supabase which offers PostgreSQL tables under the hood, and because of its built-in API for handling authentication. Supabase allowed me to start the project very quickly with its generous free tier, which I believe will be more than enough for the lifetime of this project.</p>
+                <p>To automate extract updates in Google Sheets, I used Python due to its obvious strengths in handling tabular data with the pandas library. The script runs on a Hetzner server and interacts with Supabase to know which data is needed for each user, makes requests to data sources using access tokens, and updates Google Sheets with the gspread library.</p>
+            </div>
+            <div class="stack-logos-container">
+                <img src="img/coeffective/icon-react.PNG" alt="">
+                <img src="img/coeffective/icon-next.PNG" alt="">
+                <img src="img/coeffective/icon-python.PNG" alt="">
+                <img src="img/coeffective/icon-supabase.PNG" alt="">
+                <img src="img/coeffective/icon-hetzner.PNG" alt="">
+            </div>
+        </div>
+
+        <img class="animated-demo" src="img/coeffective/coeffective-project-dashboard-delete.webp" alt="deleting an import">
+
+        <div class="purpose-goal">
+            <h2>Problems and thought process</h2>
+            <p>I encountered quite a lot of challenges throughout this project. Here’s a non-exhaustive list of the tasks I tackled, each bringing its own set of hurdles that I ultimately overcame:</p>
+            <ul>
+                <li>Integrating Supabase authentication with Next.js</li>
+                <li>Navigating Next.js’ SSR, client components, and server components</li>
+                <li>Making a React form work seamlessly with Google APIs for specific actions (e.g., creating shared folders and files, adding tabs) and setting up Supabase with proper RLS policies</li>
+                <li>Writing a Python script to run with cron, interacting with Google APIs, the Tableau API, and Supabase to refresh all extracts for all users</li>
+                <li>Setting up a server on DigitalOcean to run the Python script, and then migrating to Hetzner for improved performance</li>
+                <li>Designing and styling the entire UI from scratch with a focus on consistency, user-friendliness, responsive design, navigation, loading states, modals, redirects, and error handling</li>
+                <li>Building an interactive table for listing Google Sheets and extracts, providing a smooth user experience during actions like deleting</li>
+                <li>Documenting the “Flamingo” feature, which requires significant user setup and guidance</li>
+                <li>Iteratively fine-tuning all functionalities through thorough manual testing, accounting for edge cases and handling errors in both the user-facing features, database and API interactions, as well as the Python script</li>
+            </ul>
+        </div>
+
+        <figure class="figure-image">
+            <img class="animated-demo" src="img/coeffective/git-history.PNG" alt="coeffective git history">
+            <figcaption><em>Git histories of the website repo and the script repo</em></figcaption>
+        </figure>
+
+        <div class="lessons-learned-wrapper">
+            <div>
+                <h2>Lessons Learned</h2>
+                <p>I could spend days describing the lessons that I learned while working on this project, as I covered a wide range of topics working from one part of the application to the next. Working on this project involved continuous learning, especially regarding Next.js’ App Router paradigm, User Experience, API integration, database design, and Ubuntu server setup. I also developed a strong focus on code structure and organization, which allowed me to navigate my own project effectively even months after writing the initial code.</p>
+                <p>Though there was an initial learning curve, successfully completing a project using Next.js has boosted my confidence in my ability to other frameworks like Vue or Angular.</p>
+            </div>
+            <img src="img/coeffective/project-structure.PNG" alt="coeffective project structure">
+        </div>
+
+        <div class="areas-for-improvement">
+            <div>
+                <h2>Areas for Improvement</h2>
+                <p>Looking back now, there are two main areas where I could enhance this project:</p>
+                <p><strong>Using TypeScript Instead of JavaScript</strong>: When I started, I was comfortable with TypeScript basics, but I chose JavaScript to get started quickly and because I felt more confident carrying out a full project in JavaScript. Since I’m the sole contributor, TypeScript’s team collaboration advantages were less essential. Still, as the project grew, I occasionally found myself wishing for TypeScript’s type feedback in my IDE, especially when working with objects and complex functions, as it would have saved time and reduced second-guessing.</p>
+                <p><strong>Automated Testing</strong>: Although I tested every element of my application thoroughly, I did so manually—thinking through each possible user interaction, runtime error, and database response. As I refactored code and retested components manually repeatedly, the importance of automated testing became clear. While my priority was to start coding quickly, I can see how automated testing would have saved time and streamlined development in the long run.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
 
 </body>
 </html>
