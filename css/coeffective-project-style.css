@@ -921,6 +921,12 @@ hr {
         /*text-align: center;*/
         padding: var(--sectionPadding);
     }
+
+
+    #why-choose h1 {
+        padding: 50px 0;
+    }
+
     #why-choose .cs-container {
         width: 100%;
         /* changes to 1280px on tablet */
